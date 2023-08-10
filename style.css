@@ -1,0 +1,332 @@
+/* The code which commented downside is not working as expected so i've commented 
+it and add some different*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* H E A D E R */
+.main-head {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+.hero {
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('nature.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 2rem 6rem;
+    background-color: cadetblue;
+    font-size: 1.8rem;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+/* 2nd SECTION (LOCATION) */
+#location {
+    min-height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('new-york.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-head {
+    width: 90%;
+    margin: auto;
+}
+
+.location-head h2 {
+    padding: 1rem 0rem;
+    padding-top: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+.location-head h3 {
+    padding: 2rem 0rem;
+    /* background: linear-gradient(#131c27, #663b34);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;*/
+}
+
+.aeroplane {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    max-width: 500px;
+    height: auto;
+    z-index: 1;
+}
+
+.moving-aeroplane {
+    animation: aeroAnimation 5s infinite linear;
+}
+
+/* -  A N I M A T I O N S - */
+@keyframes aeroAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-250%);
+    }
+}
+
+/* 3rd SECTION (BENEFITS) */
+.benefits-head {
+    background-color: #343c44;
+    color: white;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card h3,
+p {
+    padding: 1rem;
+}
+
+.card-img {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #343c44;
+}
+
+.cards img {
+    max-width: 20%;
+    margin: 1rem;
+
+}
+
+/* 4th SECTION (CONTACT) , FORMS */
+#contact {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('mount.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.5);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    padding: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+/* F O O T E R */
+footer {
+    background: rgba(19, 28, 39, 5);
+    color: white;
+}
+
+.footer-wrap {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    font-size: 2rem;
+    flex: 1 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* M E D I A   Q U E R I E S */
+
+@media screen and (max-width:932px) {
+    html {
+        font-size: 45%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
+
+    .aeroplane {
+        height: 15rem;
+    }
+
+    .location-head h3 {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-text-fill-color: white;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+
+    }
+
+    footer h4 {
+        padding-bottom: 2rem;
+    }
+}
